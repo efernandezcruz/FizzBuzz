@@ -11,7 +11,7 @@ const FizzBuzz = ({ number }: IProps): JSX.Element => {
   if (isMultipleOf5) fizzedNum += 'Buzz';
   if (!isMultipleOf3 && !isMultipleOf5) fizzedNum = number;
 
-  return <div>{fizzedNum}</div>;
+  return <div data-testid="list-element">{fizzedNum}</div>;
 };
 
 export default FizzBuzz;
