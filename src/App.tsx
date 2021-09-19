@@ -1,3 +1,4 @@
+import classes from './App.module.css';
 import FizzBuzz from './components/FizzBuzz/FizzBuzz';
 
 const App = (): JSX.Element => {
@@ -9,6 +10,6 @@ const App = (): JSX.Element => {
     list.push(<FizzBuzz key={i} number={i} />);
   }
 
-  return <div>{list}</div>;
+  return <div className={classes.Container}>{list}</div>;
 };
 export default App;
